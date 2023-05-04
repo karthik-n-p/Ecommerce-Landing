@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Abril Fatface' ,cursive;
+    overflow-x: hidden;
+
+}
+
+:root {
+    --primary-color: #5F6C37; /* used for headings */
+    --secondary-color: #363D1E; /* used as paragraph color and other subtext */
+    --background-color-1: #F9DE80; /* used as background of button and graphics */
+    --background-color-2: #EAA34D; /* used as background of button and graphics */
+  }
+
+/* Navbar */
+header{
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+    font-size: 40px;
+    font-weight: 1;
+    color: #424B25;
+
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    list-style: none;
+    margin-left: 30px;
+}
+li a{
+    font-family: 'Quicksand';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    text-transform: uppercase;
+    
+    color: #424B25;
+}
+li a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #424B25;
+    transition: width .3s;
+}
+li a:hover:after {
+    width: 100%;
+    transition: width .3s;
+}
+
+#Home{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    
+}
+#Home .container{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: visible;
+
+}
+.graphic-1 {
+    width: 1075px;
+    height: 850px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    clip-path: ellipse(53% 47% at 80% 35%);
+    background: #F9DE80;
+}
+.graphic-1 img{
+    width: 841.62px;
+height: 627.46px;
+}
+
+.banner-text .new-btn{
+    background: var(--background-color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 52px;
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+}
+.banner-text h1{
+    font-style: normal;
+font-weight: 400;
+font-size: 80px;
+line-height: 78px;
+letter-spacing: 0.01em;
+
+/* Dark Green */
+
+color: var(--primary-color);
+    
+}
+.banner-text p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156.5%;
+    /* or 25px */
+    
+    letter-spacing: 0.01em;
+    
+    color: var(--secondary-color);
+}
+.banner-text button{
+    width: 173px;
+height: 40px;
+background: var(--primary-color);
+    
+
+}
+.btn2{
+    border-radius: 8px;
+    border:0;
+    font-family: 'Quicksand';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 97.9%;
+/* identical to box height, or 16px */
+
+letter-spacing: 0.01em;
+color:white;
+}
+
+
+
+
+
+
+
